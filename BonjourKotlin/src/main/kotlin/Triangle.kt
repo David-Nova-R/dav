@@ -1,15 +1,18 @@
 package org.novarincon
 
 fun main (args: Array<String>){
-    val hauteur:Int = args[0].toInt()
 
-    afficherTriangleh(hauteur)
+   println(afficherTriangleh(4))
+    println(afficherTriangleh(8))
+    println(afficherTriangleh(10))
+    println(afficherTriangleh(100))
 }
-fun afficherTriangleh(hauteur:Int){
+fun afficherTriangleh(hauteur:Int): String {
     val etoile:String="*"
     for (i in 1..hauteur){
         println(etoile.repeat(i))
     }
+    return ""
 }
 
 //fun main(){
